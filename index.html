@@ -24,17 +24,6 @@
                 background-attachment: scroll, scroll;
             }
 
-            #catMoon {
-                position: absolute;
-                bottom: -500px;
-                left: calc(100vw - 730px);
-                width: 800px;
-                max-width: 90vw;
-                height: auto;
-                z-index: 10;
-                pointer-events: none;
-            }
-
             .container {
                 width: 100%;
                 display: flex;
@@ -46,14 +35,14 @@
                 justify-content: center;
             }
 
-            #d1 { 
+            #d1 {
                 font-size: 16px;
                 color: #0c1620;
                 border: 2px solid black; 
                 margin: 50px 10px 300px 10px;
                 padding: 40px;
                 width: 100%;
-                max-width: 900px;
+                max-width: 1000px;
                 /*min-height: calc(100% - 10px);*/
                 box-sizing: border-box;
                 background-color: rgb(253, 252, 255);
@@ -62,8 +51,8 @@
             }
 
             #d2 {
-                width: calc(100% + 80px);
-                margin: -40px -40px 30px -40px;
+                width: calc(100% + 40px);
+                margin: -40px -20px 30px -20px;
             }
 
             #d2 img {
@@ -109,19 +98,31 @@
             }
 
             .social-links img {
-                width: 20px;
-                height: 20px;
+                width: 30px;
+                height: 30px;
                 object-fit: contain;
                 display: block;
             }
 
+            #d4 {
+                width: calc(100% + 40px);
+                margin: 0px -20px -50px -20px;    
+            }
+
+            #d4 img {
+                display: block;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+
             @media only screen and (max-width: 600px) {
                 #d1 {
-                    margin: 30px 20px 10px 20px;   /* less top margin now that image/padding is smaller */
-                    padding: 10px;                 /* was 15px */
+                    margin: 20px 20px 20px 20px; 
+                    padding: 10px;               
                     width: calc(100% - 20px);
-                    font-size: 9px;               /* was 17px */
-                    line-height: 1.10;             /* was 1.25 */
+                    font-size: 9px;             
+                    line-height: 1.10;          
                 }
 
                 #d2 {
@@ -130,7 +131,7 @@
                 }
 
                 #d2 img {
-                    height: 80px;                  /* was 120px */
+                    height: 80px;              
                 }
 
                 #d3 p {
@@ -147,21 +148,24 @@
                 }
 
                 .social-links {
-                    margin-top: 8px;               /* was 10px */
-                    margin-bottom: 8px;            /* was 10px */
+                    margin-top: 8px;           
+                    margin-bottom: 8px;          
                 }
 
-                #catMoon{
-                    width: clamp(200px, 70vw, 450px);
-                    left: auto;
-                    right: -20vw;
-                    bottom: 0px;
+                #d4 {
+                    width: calc(100% + 20px);
+                    margin: 0px -10px -10px -10px;
+                }
+
+                #d4 img {
+                    display: block;
+                    height: 150px;         
                 }
             }
 
         </style>
         <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kreamistry</title>
         </head>
         <body>
@@ -263,10 +267,10 @@
             </a>
         </div> <!--Closes social-links -->
         </div> <!--Closes #d3 -->
+            <div id = "d4">
+                <img src="images/catAndMoon.jpg">
+            </div> <!--Closes d4Image-->
         </div> <!--Closes #d1 -->
-
-        <img id="catMoon" src="images/catAndMoon.png">
-
         </div> <!--Closes .container -->
     </body>
 </html>
