@@ -36,17 +36,54 @@
                 }
 
                 #d1 {
-                    font-size: 18px;
+                    font-size: 14.5px;
+                    font-family: Georgia, 'Times New Roman', serif;
                     color: #0c1620;
                     border: 2px solid black; 
-                    margin: 150px 10px 100px 10px;
-                    padding: 40px;
+                    margin: 100px 10px 100px 10px;
+                    padding: 50px 40px 40px 30px;
                     width: 100%;
-                    max-width: 700px;
+                    max-width: 1050px; /*Border Width*/
                     box-sizing: border-box;
                     background-color: rgb(253, 252, 255);
                     overflow-wrap: anywhere;
                     height: auto;
+                }
+
+                .content-row {
+                    display: flex;
+                    gap: 20px;
+                    align-items: flex-start;
+                }
+
+                .image-col {
+                    flex: 0 0 35%;
+                    border-right: 2px solid #2E4764;
+                    padding-right: 20px;
+                }
+
+                .image-col img {
+                    width: 400px;
+                    height: 650px;
+                    display: block;
+                    border-radius: 4px;
+                }
+
+                .text-col {
+                    flex: 1;
+                    text-align: justify;
+                }
+
+                #textIndentionDiv {
+                    margin-top: 20px;
+                    text-indent: 40px;
+                    line-height: 1.5;
+                    margin: 25px 10px 10px 20px;
+                }
+
+                #journalEntry1 {
+                    font-size: 16px;
+                    line-height: 1.4;
                 }
 
             </style>
@@ -57,43 +94,62 @@
         <body>
             <div class = "container">
             <div id = "d1">
-                <p>
+                <div class = "content-row">
+                    <div class = "image-col">
+                        <img src="images/tpcCookie.jpg">
+                    </div> <!--image-col closing-->
+                    
+                    <div class = "text-col">
+                    
+                    <p>
 
-                Journal Entry #02. <b>The Professor’s Classic</b> (Classic Chocolate with Himalayan salt)
+                        <div id = "journalEntry1">
 
-                </p>
+                        Journal Entry #02. <b>The Professor’s Classic</b> <br>(Classic Chocolate with Himalayan salt)
 
-                <p>
+                        </div>
 
-                Baron Baskerville has grown increasingly bold. His offenses have become more calculated, his strength more formidable. 
-                I fear that simple evasion will no longer suffice. If my labbies are to withstand his assaults, I must develop a formula 
-                that does not merely strengthen the body—but fortifies it.
+                    </p>
 
-                </p>
+                    <div id = "textIndentionDiv">
 
-                <p>
+                    <p>
 
-                After countless trials, I have finally perfected it. <b>The Professor’s Classic</b>: A rich chocolate cookie engineered around a 
-                concentrated chocolatey core, designed to deliver a remarkable increase in muscular density upon consumption. The formula 
-                reinforces the body’s structural strength, allowing its bearer to endure impacts that would otherwise prove overwhelming.
+                    Baron Baskerville has grown increasingly bold. His offenses have become more calculated, his strength more formidable. 
+                    I fear that simple evasion will no longer suffice. If my labbies are to withstand his assaults, I must develop a formula 
+                    that does not merely strengthen the body—but fortifies it.
 
-                </p>
+                    </p>
 
-                <p>
+                    <p>
 
-                Yet strength without balance is merely brute force. Thus, I introduced a precise measure of Himalayan salt—a mineral refinement 
-                intended to temper the richness of the chocolate while completing the formula’s delicate equilibrium. The result is deceptively 
-                simple: a dark, indulgent exterior concealing a molten chocolate center, carrying within it a formula capable of turning the ordinary 
-                into something considerably more resilient.
+                    After countless trials, I have finally perfected it. <b>The Professor’s Classic</b>: A rich chocolate cookie engineered around a 
+                    concentrated chocolatey core, designed to deliver a remarkable increase in muscular density upon consumption. The formula 
+                    reinforces the body’s structural strength, allowing its bearer to endure impacts that would otherwise prove overwhelming.
 
-                </p>
+                    </p>
 
-                <p>
-                
-                I have named it after myself for one reason: Some formulas are too important to remain unnamed.
+                    <p>
 
-                </p>
-            
+                    Yet strength without balance is merely brute force. Thus, I introduced a precise measure of Himalayan salt—a mineral refinement 
+                    intended to temper the richness of the chocolate while completing the formula’s delicate equilibrium. The result is deceptively 
+                    simple: a dark, indulgent exterior concealing a molten chocolate center, carrying within it a formula capable of turning the ordinary 
+                    into something considerably more resilient. 
+
+                    </p>
+
+                    <p>
+
+                    I have named it after myself for one reason: Some formulas are too important to remain unnamed. <br> <br> <br>
+
+                    Sincerely, <br> <br>
+                    <b>The Professor</b>
+
+                    </p>
+
+                    </div> <!--textIndentionDiv closing-->
+                    </div> <!--Text-Col closing-->
+                </div> <!-- Content-row closing-->
             </div>
             </div>
         </body>
