@@ -36,17 +36,53 @@
                 }
 
                 #d1 {
-                    font-size: 18px;
+                    font-size: 15px;
+                    font-family: Georgia, 'Times New Roman', serif;
                     color: #0c1620;
                     border: 2px solid black; 
-                    margin: 150px 10px 100px 10px;
-                    padding: 40px;
+                    margin: 100px 10px 100px 10px;
+                    padding: 50px 40px 40px 30px;
                     width: 100%;
-                    max-width: 700px;
+                    max-width: 1000px; /*Border Width*/
                     box-sizing: border-box;
                     background-color: rgb(253, 252, 255);
                     overflow-wrap: anywhere;
                     height: auto;
+                }
+
+                .content-row {
+                    display: flex;
+                    gap: 20px;
+                    align-items: flex-start;
+                }
+
+                .image-col {
+                    flex: 0 0 35%;
+                    border-right: 2px solid #2E4764;
+                    padding-right: 20px;
+                }
+
+                .image-col img {
+                    width: 400px;
+                    height: 600px;
+                    display: block;
+                    border-radius: 4px;
+                }
+
+                .text-col {
+                    flex: 1;
+                    text-align: justify;
+                }
+
+                #textIndentionDiv {
+                    text-indent: 40px;
+                    line-height: 1.5;
+                    margin: 25px 5px 15px 10px;
+                }
+
+                #journalEntry1 {
+                    font-size: 17px;
+                    line-height: 1.4;
                 }
 
             </style>
@@ -57,36 +93,55 @@
         <body>
             <div class = "container">
             <div id = "d1">
-                <p>
+                <div class = "content-row">
+                    <div class = "image-col">
+                        <img src="images/redVelvetCookie.jpg">
+                    </div> <!--image-col closing-->
+                    
+                    <div class = "text-col">
+                    
+                    <p>
 
-                Journal entry #01. <b>Velvet catalyst</b> (Red Velvet infused with Cream Cheese)
+                        <div id = "journalEntry1">
 
-                </p>
+                        Journal entry #01. <b>Velvet catalyst</b> <br>(Red Velvet infused with Cream Cheese)
 
-                <p>
+                        </div>
 
-                <i>When I learned of Baron Baskerville's malicious intent and his meticulous plan to plunge the city into darkness, 
-                I knew I had to act without delay.</i> His mole army possesses an innate ability to see through the darkest of 
-                environments, granting them a formidable advantage beneath the shadows. To counter this, I turned to the one thing 
-                I could trust above all else: my feline mind and the precision of my laboratory.
+                    </p>
 
-                </p>
+                    <div id = "textIndentionDiv">
 
-                <p>
+                    <p>
 
-                After countless trials, meticulous calibrations, and a few rather questionable hours of sleep, I successfully 
-                formulated a compound designed to enhance the senses—particularly vision. Thus, the <b>Velvet catalyst</b> was born.
+                    When I learned of Baron Baskerville's malicious intent and his meticulous plan to plunge the city into darkness, 
+                    I knew I had to act without delay. His mole army possesses an innate ability to see through the darkest of 
+                    environments, granting them a formidable advantage beneath the shadows. To counter this, I turned to the one thing 
+                    I could trust above all else: my feline mind and the precision of my laboratory.
 
-                </p>
+                    </p>
 
-                <p>
+                    <p>
 
-                The <b>Velvet catalyst</b> is a chemically balanced crimson base infused with the rich essence of a molten cream cheese core; 
-                this exquisite confection is more than a delectable palate experience, but rather, a power-up that goes beyond human limitations. 
-                <b>A formula crafted not merely for indulgence, but to see what others cannot.</b>
+                    After countless trials, meticulous calibrations, and a few rather questionable hours of sleep, I successfully 
+                    formulated a compound designed to enhance the senses—particularly vision. Thus, the <b>Velvet catalyst</b> was born.
 
-                </p>
-            
+                    </p>
+
+                    <p>
+
+                    The <b>Velvet catalyst</b> is a chemically balanced crimson base infused with the rich essence of a molten cream cheese core; 
+                    this exquisite confection is more than a delectable palate experience, but rather, a power-up that goes beyond human limitations. 
+                    <b>A formula crafted not merely for indulgence, but to see what others cannot.</b> <br> <br> <br> 
+
+                    Sincerely, <br> <br>
+                    <b>The Professor</b>
+
+                    </p>
+
+                    </div> <!--textIndentionDiv closing-->
+                    </div> <!--Text-Col closing-->
+                </div> <!-- Content-row closing-->
             </div>
             </div>
         </body>
